@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  image: MyString
+  rating: 1
+  david_rating: 1
+  longevity: 1
+  recipe: MyString
+  notes: MyText
+  calories: 1
+  protein: 1
+  lipids: 1
+  carbs: 1
+  meal_plan: one
+
+two:
+  name: MyString
+  image: MyString
+  rating: 1
+  david_rating: 1
+  longevity: 1
+  recipe: MyString
+  notes: MyText
+  calories: 1
+  protein: 1
+  lipids: 1
+  carbs: 1
+  meal_plan: two
