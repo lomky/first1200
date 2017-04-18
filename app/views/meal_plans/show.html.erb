@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @meal_plan.name %>
+</p>
+
+<p>
+  <strong>Week:</strong>
+  <%= @meal_plan.week %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @meal_plan.image %>
+</p>
+
+<p>
+  <strong>Filling:</strong>
+  <%= @meal_plan.filling %>
+</p>
+
+<p>
+  <strong>Longevity:</strong>
+  <%= @meal_plan.longevity %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @meal_plan.rating %>
+</p>
+
+<p>
+  <strong>Prep time:</strong>
+  <%= @meal_plan.prep_time %>
+</p>
+
+<p>
+  <strong>Calories:</strong>
+  <%= @meal_plan.calories %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @meal_plan.notes %>
+</p>
+
+<%= link_to 'Edit', edit_meal_plan_path(@meal_plan) %> |
+<%= link_to 'Back', meal_plans_path %>

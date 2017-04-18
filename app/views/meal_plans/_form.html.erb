@@ -1,0 +1,62 @@
+<%= form_for(meal_plan) do |f| %>
+  <% if meal_plan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(meal_plan.errors.count, "error") %> prohibited this meal_plan from being saved:</h2>
+
+      <ul>
+      <% meal_plan.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :week %>
+    <%= f.date_select :week %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :filling %>
+    <%= f.number_field :filling %>
+  </div>
+
+  <div class="field">
+    <%= f.label :longevity %>
+    <%= f.number_field :longevity %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rating %>
+    <%= f.number_field :rating %>
+  </div>
+
+  <div class="field">
+    <%= f.label :prep_time %>
+    <%= f.number_field :prep_time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :calories %>
+    <%= f.number_field :calories %>
+  </div>
+
+  <div class="field">
+    <%= f.label :notes %>
+    <%= f.text_area :notes %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

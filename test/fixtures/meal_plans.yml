@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  week: 2017-04-18
+  image: MyString
+  filling: 1
+  longevity: 1
+  rating: 1
+  prep_time: 1
+  calories: 1
+  notes: MyText
+
+two:
+  name: MyString
+  week: 2017-04-18
+  image: MyString
+  filling: 1
+  longevity: 1
+  rating: 1
+  prep_time: 1
+  calories: 1
+  notes: MyText
