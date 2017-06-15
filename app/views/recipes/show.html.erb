@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @recipe.name %>
+</p>
+
+<p>
+  <strong>Nutrition:</strong>
+  <%= @recipe.nutrition_url %>
+</p>
+
+<p>
+  <strong>Recipe:</strong>
+  <%= @recipe.recipe_url %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @recipe.notes %>
+</p>
+
+<p>
+  <strong>Calories:</strong>
+  <%= @recipe.calories %>
+</p>
+
+<p>
+  <strong>Protein:</strong>
+  <%= @recipe.protein %>
+</p>
+
+<p>
+  <strong>Lipids:</strong>
+  <%= @recipe.lipids %>
+</p>
+
+<p>
+  <strong>Carbs:</strong>
+  <%= @recipe.carbs %>
+</p>
+
+<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+<%= link_to 'Back', recipes_path %>

@@ -10,24 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170418213438) do
+ActiveRecord::Schema.define(version: 20170615005834) do
 
-  create_table "items", force: :cascade do |t|
-    t.string   "name"
-    t.string   "image"
-    t.integer  "rating"
-    t.integer  "david_rating"
-    t.integer  "longevity"
-    t.string   "recipe"
-    t.text     "notes"
-    t.integer  "calories"
-    t.integer  "protein"
-    t.integer  "lipids"
-    t.integer  "carbs"
-    t.integer  "meal_plan_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-    t.index ["meal_plan_id"], name: "index_items_on_meal_plan_id"
+  create_table "foods", force: :cascade do |t|
+    t.integer "rating"
+    t.integer "david_rating"
+    t.boolean "longevity"
+    t.text    "notes"
+    t.integer "meal_plan_id"
+    t.integer "recipe_id"
+    t.index ["meal_plan_id"], name: "index_foods_on_meal_plan_id"
+    t.index ["recipe_id"], name: "index_foods_on_recipe_id"
   end
 
   create_table "meal_plans", force: :cascade do |t|
@@ -42,6 +35,19 @@ ActiveRecord::Schema.define(version: 20170418213438) do
     t.text     "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "recipes", force: :cascade do |t|
+    t.string   "name"
+    t.text     "notes"
+    t.integer  "calories"
+    t.integer  "protein"
+    t.integer  "lipids"
+    t.integer  "carbs"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "nutrition_url"
+    t.string   "recipe_url"
   end
 
 end

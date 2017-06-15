@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @food.recipe.name %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @food.rating %>
+</p>
+
+<p>
+  <strong>David rating:</strong>
+  <%= @food.david_rating %>
+</p>
+
+<p>
+  <strong>Longevity:</strong>
+  <%= @food.longevity %>
+</p>
+
+<p>
+  <strong>Recipe:</strong>
+  <%= @food.recipe.recipe_url %>
+</p>
+
+<p>
+  <strong>Recipe Notes:</strong>
+  <%= @food.recipe.notes %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @food.notes %>
+</p>
+
+<p>
+  <strong>Recipe:</strong>
+  <%= @food.meal_plan %>
+</p>
+
+<p>
+  <strong>Meal plan:</strong>
+  <%= @food.meal_plan %>
+</p>
+
+<%= link_to 'Edit', edit_food_path(@food) %> |
+<%= link_to 'Back', foods_path %>
