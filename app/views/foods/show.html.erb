@@ -1,11 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @food.recipe.name %>
-</p>
-
-<p>
   <strong>Rating:</strong>
   <%= @food.rating %>
 </p>
@@ -21,28 +16,18 @@
 </p>
 
 <p>
-  <strong>Recipe:</strong>
-  <%= @food.recipe.recipe_url %>
-</p>
-
-<p>
-  <strong>Recipe Notes:</strong>
-  <%= @food.recipe.notes %>
-</p>
-
-<p>
   <strong>Notes:</strong>
   <%= @food.notes %>
 </p>
 
 <p>
   <strong>Recipe:</strong>
-  <%= @food.meal_plan %>
+  <%= @food.recipe_id %>
 </p>
 
 <p>
   <strong>Meal plan:</strong>
-  <%= @food.meal_plan %>
+  <%= @food.meal_plan_id %>
 </p>
 
 <%= link_to 'Edit', edit_food_path(@food) %> |

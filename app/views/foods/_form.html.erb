@@ -13,7 +13,17 @@
 
   <div class="field">
     <%= f.label :meal_plan_id %>
-    <%= f.text_field :meal_plan_id %>
+    <%= f.collection_select(:meal_plan_id, MealPlan.all, :id, :name) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :recipe_id %>
+    <%= f.collection_select(:recipe_id, Recipe.all, :id, :name) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rating %>
+    <%= f.number_field :rating %>
   </div>
 
   <div class="field">
@@ -29,16 +39,6 @@
   <div class="field">
     <%= f.label :notes %>
     <%= f.text_field :notes %>
-  </div>
-
-  <div class="field">
-    <%= f.label :recipe_id %>
-    <%= f.text_field :recipe_id %>
-  </div>
-
-  <div class="field">
-    <%= f.label :rating %>
-    <%= f.number_field :rating %>
   </div>
 
   <div class="actions">
