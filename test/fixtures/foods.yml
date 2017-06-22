@@ -1,0 +1,16 @@
+
+one:
+  notes: MyText
+  rating: 1
+  david_rating: 1
+  longevity: 1
+  recipe_id: 1
+  meal_plan_id: 1
+
+two:
+  notes: MyText
+  rating: 1
+  david_rating: 1
+  longevity: 1
+  recipe_id: 1
+  meal_plan_id: 1
